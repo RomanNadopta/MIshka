@@ -74,7 +74,7 @@ img {
 .page-header__logo {
   margin: 0 auto;
   margin-top: 22px;
-  background: url("../img/mishka-logo-mobile.svg copy.svg") no-repeat;
+  background: url("../img/mishka-logo-mobile.jpg") no-repeat;
   width: 90px;
   height: 50px;
 }
@@ -534,6 +534,8 @@ img {
     margin-left: -70px;
   }
 }
+
+.webp .page-header__logo { background: url(../img/mishka-logo-mobile.webp) no-repeat; }
 
 .webp .page-header__logo-image { background-image: url(../img/hero-mobile.webp); }
 
