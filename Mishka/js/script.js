@@ -41,7 +41,7 @@ if (document.querySelector(".map")) {
     var marker = new google.maps.Marker({
       position: uluru,
       map: map,
-      draggable: true,
+      draggable: false,
       animation: google.maps.Animation.DROP,
       icon: {
         url: "./img/icon-map-pin.svg",

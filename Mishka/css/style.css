@@ -669,12 +669,14 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  margin: 0 auto;
   padding-top: 44px;
   padding-bottom: 40px;
 }
 
 .map__image-wrapper {
-  position: relative;
+  position: absolute;
   min-width: 320px;
   min-height: 456px;
   overflow: hidden;
@@ -699,6 +701,37 @@ img {
 .map__api {
   width: 100%;
   height: 457px;
+}
+
+.page-footer__social {
+  width: 100%;
+  height: 80px;
+  background-color: #f1f1f1;
+}
+
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.social__list :hover .social__link {
+  fill: #63d1bb;
+}
+
+.social__list :active .social__link {
+  opacity: 0.6;
+}
+
+.social__link--facebook {
+  position: relative;
+  top: -8px;
 }
 
 @media (min-width: 768px) {
