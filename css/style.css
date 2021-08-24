@@ -384,7 +384,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-left: 30px;
-  padding-right: 60px;
+  padding-right: 30px;
 }
 
 .product-name {
@@ -551,11 +551,154 @@ img {
   font-size: 18px;
 }
 
+.buttons-arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttons-arrows button:hover {
+  opacity: 0.6;
+}
+
+.buttons-arrows button:active {
+  opacity: 0.3;
+}
+
 .reviews__prev {
-  width: 80px;
-  height: 40px;
+  width: 130px;
+  height: 50px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid #ececec;
   background-image: url("../img/icon-left-arrow.svg");
   background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.reviews__next {
+  width: 130px;
+  height: 50px;
+  padding: 0;
+  background-color: transparent;
+  border: 1px solid #ececec;
+  background-image: url("../img/icon-right-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.review__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.review__list blockquote {
+  width: 100%;
+  height: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.reviews__write {
+  margin-top: 40px;
+}
+
+.page-footer {
+  margin-top: 45px;
+  background-image: url("../img/zigzag-separator.svg");
+  background-repeat: no-repeat;
+}
+
+.page-footer__wrapper {
+  padding-top: 44px;
+}
+
+.contacts__title {
+  font-size: 28px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacts__list {
+  margin-top: 48px;
+  font-size: 15px;
+  color: #444444;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.contacts__list td {
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.contacts-item__value {
+  padding-right: 32px;
+}
+
+.adress {
+  vertical-align: top;
+  line-height: 2em;
+}
+
+.contacts__write {
+  margin-bottom: 40px;
+}
+
+.mail {
+  vertical-align: top;
+}
+
+.mail-adress {
+  border-bottom: 1px solid #62d1ba;
+  padding-bottom: 10px;
+  width: 100px;
+}
+
+.map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 44px;
+  padding-bottom: 40px;
+}
+
+.map__image-wrapper {
+  position: relative;
+  min-width: 320px;
+  min-height: 456px;
+  overflow: hidden;
+  line-height: 0;
+  background-color: tan;
+}
+
+.map__image-wrapper ::before {
+  content: "";
+  width: 68px;
+  height: 100px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-31%, -84%);
+      -ms-transform: translate(-31%, -84%);
+          transform: translate(-31%, -84%);
+  position: absolute;
+  background-image: url("../img/icon-map-pin.svg");
+  background-repeat: no-repeat;
+}
+
+.map__api {
+  width: 100%;
+  height: 457px;
 }
 
 @media (min-width: 768px) {
