@@ -27,6 +27,42 @@ navToggle.addEventListener("click", function () {
   }
 });
 
+// Modal-overlay
+
+let modalOverlay = document.querySelector(".modal-overlay");
+let productOrder = document.querySelector(".product-order");
+
+productOrder.addEventListener("click", function () {
+  modalOverlay.classList.add("modal-overlay--opened");
+  modalOverlay.classList.remove("modal-overlay--closed");
+  document.body.style.overflow = "hidden";
+  if (modalOverlay.classList.contains("modal-overlay--opened")) {
+    window.addEventListener("click", function (e) {
+      if (e.target == modalOverlay) {
+        document.body.style.overflow = "visible";
+        modalOverlay.classList.remove("modal-overlay--opened");
+        modalOverlay.classList.add("modal-overlay--closed");
+      }
+    });
+  }
+});
+
+// Reviews-Slider
+
+// let reviewsSlider = new Swiper(".reviews__item", {
+//   directioon: "horizontal",
+//   loop: true,
+//   autoplay: {
+//     delay: 3000,
+//   },
+//   navigation: {
+//     nextEl: ".reviews__next",
+//     prevEl: ".reviews__prev",
+//   },
+// });
+
+// reviewsSlider.init();
+
 // map
 
 if (document.querySelector(".map")) {

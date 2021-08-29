@@ -179,13 +179,13 @@
           </div>
           <div class="product-price">
             <p class="product-cost">Цена: 990 руб.</p>
-            <a href="#" class="product-order button"> <span class="active-button">Заказать</span></a>
+            <a class="product-order button"> <span class="active-button">Заказать</span></a>
           </div>
           <div class="triple-set-wrapper">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)"
+              <source type="image/webp" media="(min-width: 1250px)"
                 srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-              <source media="(min-width: 1200px)"
+              <source media="(min-width: 1250px)"
                 srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
               <source type="image/webp" media="(min-width: 768px)"
                 srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x ">
@@ -248,6 +248,7 @@
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков,
               как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
               и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+
             </p>
             <p class="reviews__author-name">Анастасия Красильникова</p>
             <p class="reviews__author-nickname">@misssssiskras</p>
@@ -261,89 +262,115 @@
       </div>
     </section>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <div class="page-footer__contacts contacts">
-          <h3 class="contacts__title">Контакты</h3>
-          <div class="contacts__list">
-            <div class="contacts-item__value">
-              <ul>
-                <li class="contacts-item__value-mail">
-                  e-mail:
-                </li>
-                <li class="contacts-item__field mail-adress ">
-                  info@mimimishkashop.ru
-                </li>
-              </ul>
-              <ul>
-                <li class="contacts-item__value-adress">
-                  адрес:
-                </li>
-                <li class="contacts-item__field adress">
-                  г. Санкт-Петербург,<br>
-                  ул. Большая Конюшенная,<br>
-                  д. 19/8, офис 101
-                </li>
-              </ul>
-            </div>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <h3 class="contacts__title">Контакты</h3>
+        <div class="contacts__list">
+          <div class="contacts-item__value">
+            <ul>
+              <li class="contacts-item__value-mail">
+                e-mail:
+              </li>
+              <li class="contacts-item__field mail-adress ">
+                info@mimimishkashop.ru
+              </li>
+            </ul>
+            <ul>
+              <li class="contacts-item__value-adress">
+                адрес:
+              </li>
+              <li class="contacts-item__field adress">
+                г. Санкт-Петербург,<br>
+                ул. Большая Конюшенная,<br>
+                д. 19/8, офис 101
+              </li>
+            </ul>
           </div>
-          <h2 class="visually-hidden">Карта</h2>
-          <div class="map">
-            <div class="map__api" id="google-map" tabindex="-1"></div>
-            <div class="map__image-wrapper">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)"
-                  srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-                <source type="image/webp" media="(min-width: 768px)"
-                  srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
-                <source type="image/webp" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x">
-                <img class="map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
-              </picture>
-            </div>
+        </div>
+        <h2 class="visually-hidden">Карта</h2>
+        <div class="map">
+          <div class="map__api" id="google-map" tabindex="-1"></div>
+          <div class="map__image-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1250px)"
+                srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source media="(min-width: 1250px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp, img/map-mobile@2x.webp 2x">
+              <img class="map-image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Карта">
+            </picture>
           </div>
-          <a class="contacts__write button" href="#">
+        </div>
+        <div class="contacts__write">
+          <a class="button" href="#">
             <span class="active-button">Напишите нам</span>
           </a>
         </div>
-        <div class="page-footer__social social">
-          <ul class="social__list">
-            <li class="social__item social-item__logo-footer">
-              <a class="social__link logo-footer" href="#">
-                <svg width="100px" height="40px">
-                  <use xlink:href="#mishka-logo-footer"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--instagram" href="#">
-                <svg width="24" height="20">
-                  <use xlink:href="#instagram">
-                  </use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--facebook" href="#">
-                <svg width="15" height="30">
-                  <use xlink:href="#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--twitter" href="#">
-                <svg width="24" height="21">
-                  <use xlink:href="#twitter"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
       </div>
-    </footer>
-  </main>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item social-item__logo-footer">
+            <a class="social__link logo-footer" href="#">
+              <svg width="100px" height="40px">
+                <use xlink:href="#mishka-logo-footer"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <svg width="24" height="20">
+                <use xlink:href="#instagram">
+                </use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <svg width="15" height="30">
+                <use xlink:href="#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <svg width="24" height="21">
+                <use xlink:href="#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
+  <div class="modal-overlay modal-overlay--closed">
+    <div class="modal-basket">
+      <h2 class="basket-title">Добавить в корзину</h2>
+      <p class="size-item">Выберите размер:</p>
+      <form class="size-form" action="">
+        <div class="size-position">
+          <input class="visually-hidden" type="radio" id="size-s" name="basket" value="size-S">
+          <label class="size-label" for="size-s">s</label>
+        </div>
+        <div class="size-position">
+          <input class="visually-hidden" type="radio" id="size-m" name="basket" value="size-M">
+          <label for="size-m">m</label>
+        </div>
+        <div class="size-position">
+          <input class="visually-hidden" type="radio" id="size-l" name="basket" value="size-L">
+          <label for="size-l">l</label>
+        </div>
+
+        <div class="knitted-basket">
+          <button class="submit-button button" type="submit">Добавить</button>
+        </div>
+      </form>
+    </div>
+  </div>
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBv3Mue0MjRxWehq81r_XyQS8Lnr-iQ-VQ&callback"></script>
   <script src="js/script.min.js"></script>
