@@ -767,7 +767,7 @@ input[type=radio].visually-hidden {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 999;
@@ -787,9 +787,9 @@ input[type=radio].visually-hidden {
   position: fixed;
   width: 320px;
   left: 50%;
-  -webkit-transform: translate(-50%, 50%);
-      -ms-transform: translate(-50%, 50%);
-          transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
   padding-left: 30px;
   padding-right: 30px;
   height: 342px;
