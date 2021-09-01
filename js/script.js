@@ -27,25 +27,82 @@ navToggle.addEventListener("click", function () {
   }
 });
 
-// Modal-overlay
+//Change hover-catalog basket
+let productOrder = document.querySelector(".product-order");
+let hare = document.getElementById("hare");
+let hareButton = document.getElementById("catalog-hare__button");
+let basketUnderwear = document.getElementById("basket-underwear");
+let BasketUnderwearButton = document.getElementById("basket-underwear__button");
+let basketToys = document.getElementById("basket-toys");
+let basketToysButton = document.getElementById("basket-toys__button");
+
+window.addEventListener("mousemove", function (e) {
+  if (e.target == hareButton) {
+    hare.style.opacity = "0.6";
+  } else {
+    hare.style.opacity = "1";
+  }
+  window.addEventListener("click", function (e) {
+    if (e.target == hareButton) {
+      hare.style.opacity = "0.3";
+    }
+  });
+});
+
+window.addEventListener("mousemove", function (e) {
+  if (e.target == BasketUnderwearButton) {
+    basketUnderwear.style.opacity = "0.6";
+  } else {
+    basketUnderwear.style.opacity = "1";
+  }
+  window.addEventListener("click", function (e) {
+    if (e.target == BasketUnderwearButton) {
+      basketUnderwear.style.opacity = "0.3";
+    }
+  });
+});
+
+window.addEventListener("mousemove", function (e) {
+  if (e.target == basketToysButton) {
+    basketToys.style.opacity = "0.6";
+  } else {
+    basketToys.style.opacity = "1";
+  }
+  window.addEventListener("click", function (e) {
+    if (e.target == basketToysButton) {
+      basketToys.style.opacity = "0.3";
+    }
+  });
+});
+
+//------------------------------------------
+
+// Modal - overlay;
 
 let modalOverlay = document.querySelector(".modal-overlay");
-let productOrder = document.querySelector(".product-order");
-
-productOrder.addEventListener("click", function () {
-  modalOverlay.classList.add("modal-overlay--opened");
-  modalOverlay.classList.remove("modal-overlay--closed");
-  document.body.style.overflow = "hidden";
-  if (modalOverlay.classList.contains("modal-overlay--opened")) {
-    window.addEventListener("click", function (e) {
-      if (e.target == modalOverlay) {
-        document.body.style.overflow = "visible";
-        modalOverlay.classList.remove("modal-overlay--opened");
-        modalOverlay.classList.add("modal-overlay--closed");
-      }
-    });
+window.addEventListener("click", function (e) {
+  if (
+    e.target == productOrder ||
+    e.target == hareButton ||
+    e.target == BasketUnderwearButton ||
+    e.target == basketToysButton
+  ) {
+    modalOverlay.classList.add("modal-overlay--opened");
+    modalOverlay.classList.remove("modal-overlay--closed");
+    document.body.style.overflow = "hidden";
+    if (modalOverlay.classList.contains("modal-overlay--opened")) {
+      window.addEventListener("click", function (e) {
+        if (e.target == modalOverlay) {
+          document.body.style.overflow = "visible";
+          modalOverlay.classList.remove("modal-overlay--opened");
+          modalOverlay.classList.add("modal-overlay--closed");
+        }
+      });
+    }
   }
 });
+
+//--------------------------------------------------
 
 // Reviews-Slider
 
@@ -93,3 +150,5 @@ if (document.querySelector(".map")) {
   window.onload = hideImageMap;
   window.addEventListener("load", initMap);
 }
+
+//----------------------------------------
