@@ -32,59 +32,76 @@ let productOrder = document.querySelector(".product-order");
 let hare = document.getElementById("hare");
 let hareButton = document.getElementById("catalog-hare__button");
 let basketUnderwear = document.getElementById("basket-underwear");
-let BasketUnderwearButton = document.getElementById("basket-underwear__button");
+let basketUnderwearButton = document.getElementById("basket-underwear__button");
 let basketToys = document.getElementById("basket-toys");
 let basketToysButton = document.getElementById("basket-toys__button");
 
-window.addEventListener("mousemove", function (e) {
-  if (e.target == hareButton) {
-    hare.style.opacity = "0.6";
-  } else {
-    hare.style.opacity = "1";
-  }
-  window.addEventListener("click", function (e) {
-    if (e.target == hareButton) {
-      hare.style.opacity = "0.3";
-    }
-  });
-});
+function hoverOn() {
+  hare.style.opacity = "0.6";
+  basketUnderwear.style.opacity = "0.6";
+  basketToys.style.opacity = "0.6";
+}
+function hoverOff() {
+  hare.style.opacity = "1";
+  basketUnderwear.style.opacity = "1";
+  basketToys.style.opacity = "1";
+}
 
-window.addEventListener("mousemove", function (e) {
-  if (e.target == BasketUnderwearButton) {
-    basketUnderwear.style.opacity = "0.6";
-  } else {
-    basketUnderwear.style.opacity = "1";
-  }
-  window.addEventListener("click", function (e) {
-    if (e.target == BasketUnderwearButton) {
-      basketUnderwear.style.opacity = "0.3";
-    }
-  });
-});
+if (hareButton !== null) {
+  hareButton.addEventListener("mousemove", hoverOn);
+  hareButton.addEventListener("mouseout", hoverOff);
+  basketUnderwearButton.addEventListener("mousemove", hoverOn);
+  basketUnderwearButton.addEventListener("mouseout", hoverOff);
+  basketToysButton.addEventListener("mousemove", hoverOn);
+  basketToysButton.addEventListener("mouseout", hoverOff);
+}
 
-window.addEventListener("mousemove", function (e) {
-  if (e.target == basketToysButton) {
-    basketToys.style.opacity = "0.6";
-  } else {
-    basketToys.style.opacity = "1";
-  }
-  window.addEventListener("click", function (e) {
-    if (e.target == basketToysButton) {
-      basketToys.style.opacity = "0.3";
-    }
-  });
-});
+// window.addEventListener("click", function (e) {
+//   if (e.target === hareButton) {
+//     hare.style.opacity = "0.3";
+//   } else {
+//     hare.style.opacity = "1";
+//   }
+// });
+
+// window.addEventListener("mousemove", function (e) {
+//   if (e.target == BasketUnderwearButton) {
+//     basketUnderwear.style.opacity = "0.6";
+//   } else {
+//     basketUnderwear.style.opacity = "1";
+//   }
+//   window.addEventListener("click", function (e) {
+//     if (e.target == BasketUnderwearButton) {
+//       basketUnderwear.style.opacity = "0.3";
+//     }
+//   });
+// });
+
+// window.addEventListener("mousemove", function (e) {
+//   if (e.target == basketToysButton) {
+//     basketToys.style.opacity = "0.6";
+//   } else {
+//     basketToys.style.opacity = "1";
+//   }
+//   window.addEventListener("click", function (e) {
+//     if (e.target == basketToysButton) {
+//       basketToys.style.opacity = "0.3";
+//     }
+//   });
+// });
 
 //------------------------------------------
 
 // Modal - overlay;
 
 let modalOverlay = document.querySelector(".modal-overlay");
+let activeButtonOrder = document.getElementById("active-button__order");
 window.addEventListener("click", function (e) {
   if (
     e.target == productOrder ||
+    e.target == activeButtonOrder ||
     e.target == hareButton ||
-    e.target == BasketUnderwearButton ||
+    e.target == basketUnderwearButton ||
     e.target == basketToysButton
   ) {
     modalOverlay.classList.add("modal-overlay--opened");
