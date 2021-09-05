@@ -36,59 +36,39 @@ let basketUnderwearButton = document.getElementById("basket-underwear__button");
 let basketToys = document.getElementById("basket-toys");
 let basketToysButton = document.getElementById("basket-toys__button");
 
-function hoverOn() {
+function hoverOnHare() {
   hare.style.opacity = "0.6";
+}
+function hoverOnBasketUnderwear() {
   basketUnderwear.style.opacity = "0.6";
+}
+function hoverOnBasketToys() {
   basketToys.style.opacity = "0.6";
 }
-function hoverOff() {
+
+function hoverOffHare() {
   hare.style.opacity = "1";
+}
+function hoverOffBasketUnderwear() {
   basketUnderwear.style.opacity = "1";
+}
+
+function hoverOffBasketToys() {
   basketToys.style.opacity = "1";
 }
 
-if (hareButton !== null) {
-  hareButton.addEventListener("mousemove", hoverOn);
-  hareButton.addEventListener("mouseout", hoverOff);
-  basketUnderwearButton.addEventListener("mousemove", hoverOn);
-  basketUnderwearButton.addEventListener("mouseout", hoverOff);
-  basketToysButton.addEventListener("mousemove", hoverOn);
-  basketToysButton.addEventListener("mouseout", hoverOff);
+if (
+  hareButton !== null ||
+  basketUnderwearButton !== null ||
+  basketToysButton !== null
+) {
+  hareButton.addEventListener("mousemove", hoverOnHare);
+  hareButton.addEventListener("mouseout", hoverOffHare);
+  basketUnderwearButton.addEventListener("mousemove", hoverOnBasketUnderwear);
+  basketUnderwearButton.addEventListener("mouseout", hoverOffBasketUnderwear);
+  basketToysButton.addEventListener("mousemove", hoverOnBasketToys);
+  basketToysButton.addEventListener("mouseout", hoverOffBasketToys);
 }
-
-// window.addEventListener("click", function (e) {
-//   if (e.target === hareButton) {
-//     hare.style.opacity = "0.3";
-//   } else {
-//     hare.style.opacity = "1";
-//   }
-// });
-
-// window.addEventListener("mousemove", function (e) {
-//   if (e.target == BasketUnderwearButton) {
-//     basketUnderwear.style.opacity = "0.6";
-//   } else {
-//     basketUnderwear.style.opacity = "1";
-//   }
-//   window.addEventListener("click", function (e) {
-//     if (e.target == BasketUnderwearButton) {
-//       basketUnderwear.style.opacity = "0.3";
-//     }
-//   });
-// });
-
-// window.addEventListener("mousemove", function (e) {
-//   if (e.target == basketToysButton) {
-//     basketToys.style.opacity = "0.6";
-//   } else {
-//     basketToys.style.opacity = "1";
-//   }
-//   window.addEventListener("click", function (e) {
-//     if (e.target == basketToysButton) {
-//       basketToys.style.opacity = "0.3";
-//     }
-//   });
-// });
 
 //------------------------------------------
 
