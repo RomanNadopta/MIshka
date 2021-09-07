@@ -112,12 +112,6 @@ input[type=radio].visually-hidden {
   font-size: 30px;
 }
 
-.page-header__logo {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
 .main-nav {
   position: relative;
   width: auto;
@@ -673,13 +667,6 @@ input[type=radio].visually-hidden {
 
 .reviews__write {
   margin-top: 40px;
-}
-
-.reviews__prev,
-.reviews__next {
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .page-footer {
