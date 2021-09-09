@@ -102,20 +102,23 @@ window.addEventListener("click", function (e) {
 //--------------------------------------------------
 
 // Reviews-Slider
-
-// let reviewsSlider = new Swiper(".reviews__item", {
-//   directioon: "horizontal",
-//   loop: true,
-//   autoplay: {
-//     delay: 3000,
-//   },
-//   navigation: {
-//     nextEl: ".reviews__next",
-//     prevEl: ".reviews__prev",
-//   },
-// });
-
-// reviewsSlider.init();
+if (document.querySelector(".reviews-slider")) {
+  let reviewsSlider = new Swiper(".reviews-slider", {
+    direction: "horizontal",
+    loop: false,
+    autoplay: {
+      delay: 3000,
+    },
+    navigation: {
+      nextEl: ".reviews__next",
+      prevEl: ".reviews__prev",
+    },
+    autoHeight: true,
+    spaceBetween: 180,
+    slidesPerView: 1,
+  });
+  reviewsSlider.init();
+}
 
 // map
 

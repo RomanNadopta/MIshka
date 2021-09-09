@@ -10,6 +10,8 @@
   <link rel="shortcut icon" href="./img/hero.ico">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <title>Mishka</title>
 </head>
 
@@ -237,32 +239,50 @@
     <section class="reviews">
       <div class="reviews__wrapper slider">
         <h2 class="reviews__title">Відгуки</h2>
-        <div class="review__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">
-              Я молода мама, але все одно фотографії не набирали і близько такої кількості лайків, як у популярних
-              інстамамочок. У розпачі, я накупила аксесуарів та іграшок в Мішці, і мої фотографії відразу стали більш
-              стильними, а також набирають більше лайків!
-            </p>
-            <p class="reviews__author-name">Анастасія Красива</p>
-            <p class="reviews__author-nickname">@misssssiskras</p>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <p class="reviews__text">
-              Я молода мама, але все одно фотографії не набирали і близько такої кількості лайків, як у популярних
-              інстамамочок. У розпачі, я накупила аксесуарів та іграшок в Мішці, і мої фотографії відразу стали більш
-              стильними, а також набирають більше лайків!
+        <div class="reviews-slider swiper-container">
+          <div class="reviews__list swiper-wrapper">
+            <div class="reviews-slider__slide swiper-slide">
+              <blockquote class="reviews__item swiper-slide">
+                <p class="reviews__text">
+                  Я молода мама, але все одно фотографії не набирали і близько такої кількості лайків, як у популярних
+                  інстамамочок. У розпачі, я накупила аксесуарів та іграшок в Мішці, і мої фотографії відразу стали
+                  більш
+                  стильними, а також набирають більше лайків!
+                </p>
+                <p class="reviews__author-name">Анастасія Красива</p>
+                <p class="reviews__author-nickname">@misssssiskras</p>
+              </blockquote>
+            </div>
+            <div class="reviews-slider__slide swiper-slide">
+              <blockquote class="reviews__item ">
+                <p class="reviews__text">
+                  Я молода мама, але все одно фотографії не набирали і близько такої кількості лайків, як у популярних
+                  інстамамочок. У розпачі, я накупила аксесуарів та іграшок в Мішці, і мої фотографії відразу стали
+                  більш
+                  стильними, а також набирають більше лайків!
 
-            </p>
-            <p class="reviews__author-name">Анастасія Красива</p>
-            <p class="reviews__author-nickname">@misssssiskras</p>
-          </blockquote>
+                </p>
+                <p class="reviews__author-name">Анастасія Красива</p>
+                <p class="reviews__author-nickname">@misssssiskras</p>
+              </blockquote>
+            </div>
+            <div class="reviews-slider__slide swiper-slide">
+              <blockquote class="reviews__item ">
+                <p class="reviews__text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores quasi, ut esse atque dolorem saepe
+                  at placeat mollitia modi rem cum quos voluptatem nihil. Molestias aut culpa nemo inventore id?
+                </p>
+                <p class="reviews__author-name">John Wick</p>
+                <p class="reviews__author-nickname">@mister_Wick</p>
+              </blockquote>
+            </div>
+          </div>
+          <div class="buttons-arrows">
+            <button class="reviews__prev" type="button"><span class="visually-hidden">Попередній</span></button>
+            <button class="reviews__next"> <span class="visually-hidden">Наступний</span></button>
+          </div>
+          <a class="reviews__write button" href="#"><span class="active-button">Написати</span></a>
         </div>
-        <div class="buttons-arrows">
-          <button class="reviews__prev" type="button"><span class="visually-hidden">Попередній</span></button>
-          <button class="reviews__next"> <span class="visually-hidden">Наступний</span></button>
-        </div>
-        <a class="reviews__write button" href="#"><span class="active-button">Написати</span></a>
       </div>
     </section>
 
