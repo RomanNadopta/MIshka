@@ -120,6 +120,43 @@ if (document.querySelector(".reviews-slider")) {
   reviewsSlider.init();
 }
 
+// Video-manufacture
+
+function findVideos() {
+  let videos = document.querySelectorAll(".manufacture__player");
+
+  for (let i = 0; i < videos.length; i++) {
+    setupVideo(videos[i]);
+  }
+}
+
+function setupVideo(video) {
+  let button = video.querySelector(".manufacture__player-button");
+
+  button.addEventListener("click", () => {
+    let iframe = createIframe();
+
+    button.remove();
+    video.appendChild(iframe);
+  });
+}
+
+function createIframe() {
+  let iframe = document.createElement("iframe");
+
+  iframe.setAttribute("allowfullscreen", "");
+  iframe.setAttribute("allow", "autoplay");
+  iframe.setAttribute(
+    "src",
+    "https://www.youtube.com/embed/C3lWwBslWqg" + "?rel=0&showinfo=0&autoplay=1"
+  );
+  iframe.classList.add("video__media");
+
+  return iframe;
+}
+
+findVideos();
+
 // map
 
 if (document.querySelector(".map")) {
