@@ -1,0 +1,147 @@
+.reviews {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.reviews__item {
+  margin-left: 0;
+  font-size: 15px;
+  color: #444444;
+  line-height: 2em;
+}
+
+.reviews__author-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.reviews__author-nickname {
+  font-size: 18px;
+}
+
+.buttons-arrows {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-arrows button {
+  &:hover {
+    opacity: 0.6;
+    transition: .3s;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.reviews__prev  {
+
+  border: 1px solid #ececec;
+  background-image: url("../img/icon-left-arrow.svg");
+
+}
+
+.reviews__next {
+  border-left: none;
+  background-image: url("../img/icon-right-arrow.svg");
+}
+
+.reviews__prev,
+.reviews__next {
+  width: 130px;
+  height: 50px;
+  padding: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #ececec;
+  cursor: pointer;
+
+  &.swiper-button-disabled {
+    opacity: 0.35;
+    cursor: auto;
+    pointer-events: none;
+  }
+}
+
+.reviews-slider {
+  overflow: hidden;
+}
+
+.reviews__list blockquote {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.reviews__write {
+  margin-top: 40px;
+}
+
+
+
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 88px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+  }
+
+  .reviews__title {
+    padding-top: 86px;
+    font-size: 43px;
+  }
+
+  .reviews__write {
+    position: absolute;
+    width: 176px;
+    right: 0;
+    top: 46px;
+    margin-right: 50px;
+    
+  }
+
+  .buttons-arrows {
+    position: absolute;
+    right: 0;
+    bottom: 12%;
+  }
+
+ .reviews__prev,
+ .reviews__next {
+   width: 60px;
+   height: 40px;
+   border: transparent;
+ }
+
+ .reviews__next {
+   margin-right: 66px;
+   margin-left: 32px;
+ }
+
+}
+
+.reviews-slider__slide {
+  position: relative;
+  z-index: 1;
+}
+
+.buttons-arrows {
+  position: relative;
+  z-index: 2;
+}
+
+@media (min-width: $desktop-width) {
+  .reviews {
+    margin-left: 100px;
+    padding-left: 175px;
+    padding-right: 100px;
+  }
+}

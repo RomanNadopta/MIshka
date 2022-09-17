@@ -1,0 +1,102 @@
+.page-header {
+  min-width: 320px;
+
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.page-header__logo {
+  margin: 0 auto;
+  margin-top: 22px;
+
+  background: url("../img/mishka-logo-mobile.jpg") no-repeat;
+  width: 90px;
+  height: 50px;
+
+
+  &:hover {
+    opacity: 0.6;
+    transition: .3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-header__logo-image {
+  width: 100%;
+  height: 390px;
+
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #f9f9f9;
+}
+
+.slogan {
+  position: relative;
+
+  display: block;
+
+  width: 81.25%;
+  margin: 0 auto;
+  top: 76px;
+
+  text-align: center;
+  font-weight: bold;
+  line-height: 36px;
+  font-size: 30px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-header__logo {
+    width: 112px;
+    margin-left: 50px;
+    margin-right: 210px;
+    margin-bottom: 26px;
+
+    background: url("../img/mishka-logo-tablet.jpg") no-repeat;
+
+    z-index: 2;
+  }
+
+  .page-header__logo-image {
+    position: relative;
+    height: 742px;
+
+    background-image: url("../img/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center top 0;
+    z-index: 1;
+  }
+
+  .slogan {
+    line-height: 52px;
+    font-size: 43px;
+
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    display: flex;
+
+    margin: 0 auto;
+    margin-top: 8px;
+    padding-bottom: 10px;
+    background: url("../img/mishka-logo-desktop.jpg") no-repeat;
+    width: 150px;
+    height: 80px;
+  }
+
+  .slogan {
+    line-height: 63px;
+    font-size: 53px;
+  }
+}

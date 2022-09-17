@@ -1,0 +1,30 @@
+.catalog-header {
+  position: relative;
+  display: flex;
+  height: 178px;
+  background-color: #f1f1f1;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.catalog-title {
+  font-size: 27px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-header {
+    height: 224px;
+    }
+
+  .catalog-title {
+    font-size: 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-header {
+    height: 254px;
+    }
+}

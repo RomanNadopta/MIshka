@@ -1,0 +1,193 @@
+.popular-product__list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-size: 25px;
+}
+
+.product-week {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.characteristics-list {
+  border-collapse: collapse;
+  font-size: 15px;
+}
+
+.product__description {
+  font-size: 15px;
+  line-height: 1.6em;
+
+  color: #444444;
+}
+
+.product td {
+  padding-top: 20px;
+  color: #444444;
+}
+
+.characteristics-list {
+  margin-bottom: 30px;
+}
+
+.characteristics-list tr {
+  position: relative;
+  bottom: 8px;
+  border-bottom: 1px solid #ececec;
+}
+
+.characteristics-list__field {
+  width: 767px;
+  padding-left: 20px;
+}
+
+.triple-set-wrapper {
+  min-width: 260px;
+  min-height: 315px;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: 30px;
+  background-color: #f5deb3;
+}
+
+.triple-set {
+  background-color: #f5deb3;
+}
+
+.product-cost {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444444;
+}
+
+@media (max-width: $mobile-width-only) {
+  
+  .triple-set-wrapper {
+    margin: 0 auto;
+  }
+
+  .product-price {
+    order: 1;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .popular-product {
+    position: relative;
+    margin-top: -18px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
+  }
+
+  .popular-product__list {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .product-name {
+    font-size: 43px;
+  }
+
+  .product__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-week {
+    padding-top: 40px;
+    padding-right: 28px;
+    width: 75px;
+    text-align: center;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .product-price {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .product-cost {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .product__description {
+    padding-top: 8px;
+    font-size: 18px;
+    width: 286px;
+  }
+
+  .characteristics {
+    width: 334px;
+  }
+
+  .characteristics-list {
+    margin-top: 50px;
+  }
+
+  .characteristics-list__field {
+    width: 200px;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .product {
+    padding-left: 175px;
+  }
+
+  .popular-product__list {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .product__list {
+    padding-top: 60px;
+    display: flex;
+    padding-left: 175px;
+  }
+
+  .product-name {
+    position: absolute;
+    margin-top: 50px;
+    font-size: 53px;
+  
+  }
+
+  .product-week {
+    position: absolute;
+    left: 0;
+    padding-left: 150px;
+  }
+
+  .characteristics {
+    margin-top: 180px;
+  }
+
+ 
+}
+
